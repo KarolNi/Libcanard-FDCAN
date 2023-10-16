@@ -2,10 +2,9 @@
  * Author: Pedro Pereira
  */
 
-#ifndef CANARD_STM32_FDCAN_H
-#define CANARD_STM32_FDCAN_H
+#pragma once
 
-#include <stm32h7xx.h> // TODO: substitute include for independent variable and macro declaration
+#include <stm32g4xx.h> // TODO: substitute include for independent variable and macro declaration
 
 typedef FDCAN_GlobalTypeDef FdCANType;
 
@@ -20,5 +19,3 @@ typedef FDCAN_GlobalTypeDef FdCANType;
 #define FDCAN_EXID_MASK		(0x1FFFFFFFUL) // Extended Identifier Mask
 #define FDCAN_RTR			    (0x20000000UL) // Remote Transmission Request
 #define FDCAN_DLC_MASK		(0x000F0000UL) // Data Length Code
-
-#endif // CANARD_STM32_FDCAN_H
